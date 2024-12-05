@@ -1,0 +1,71 @@
+ #cursor {
+     position: fixed;
+     top: -5px;
+     left: -5px;
+     width: 10px;
+     height: 10px;
+     background-color: rgba(10, 45, 248, 0.842);
+     /* Blue */
+     border-radius: 50%;
+     pointer-events: none;
+     z-index: 999;
+    transform: translate3d(-50%, -50%, 0);
+ }
+
+ :root {
+     --cursor-size: 10px;
+     --border-size: 50px;
+     --border-hover-size: 70px;
+     --cursor-color: rgba(10, 45, 248, 0.842);
+     /* Blue */
+     --border-color: rgb(231, 119, 11);
+     /* Red */
+ }
+
+ /* Border around the cursor */
+ #cursor-border {
+     --size: 50px;
+     position: fixed;
+     top: calc(var(--size) / -2);
+     left: calc(var(--size) / -2);
+     width: var(--size);
+     height: var(--size);
+     border-radius: 50%;
+     box-shadow: 0 0 0 1px rgb(231, 119, 11);
+     /* Red border */
+     pointer-events: none;
+     transition: top 0.15s ease-out, left 0.15s ease-out, width 0.15s ease-out,
+         height 0.15s ease-out, background-color 0.15s ease-out;
+     z-index: 999;
+    transform: translate3d(-50%, -50%, 0);
+ }
+
+ a:hover,
+ button:hover,
+ input:hover,
+ textarea:hover {
+     transform: scale(1.05);
+ }
+
+ /* Change color on hover */
+ #cursor-border:hover {
+     background-color: #007bff;
+     /* Blue on hover */
+ }
+
+ /* Hiding default cursor */
+ * {
+     cursor: none;
+ }
+ body,
+ * {
+     cursor: none;
+ }
+
+ /* For testing, adding some links */
+ a {
+     color: black;
+     text-decoration: none;
+     margin: 10px;
+     font-size: 18px;
+ }
