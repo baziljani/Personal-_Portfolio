@@ -73,7 +73,7 @@ document.addEventListener("mousemove", (e) => {
 });
 
 // Handle hover over clickable elements (a, button)
-document.querySelectorAll("a, button, input, textarea").forEach((element) => {
+document.querySelectorAll("a, button, input, textarea, i").forEach((element) => {
   element.addEventListener("mouseover", () => {
     cursorBorder.style.width = "70px";
     cursorBorder.style.height = "70px";
