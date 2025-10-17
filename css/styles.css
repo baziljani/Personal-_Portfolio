@@ -559,6 +559,7 @@ img {
 }
 
 .skills__css {
+<<<<<<< HEAD
   width: 90%;
 }
 
@@ -568,16 +569,30 @@ img {
 
 .skills__wordpress {
   width: 90%;
+=======
+  width: 80%;
+}
+
+.skills__js {
+  width: 60%;
+}
+
+.skills__wordpress {
+  width: 70%;
+>>>>>>> c489dada736e8139d764adbca72baf4f2c5f2fd8
 }
 
 .skills__vue {
   width: 75%;
 }
 
+<<<<<<< HEAD
 .skills__react {
   width: 80%;
 }
 
+=======
+>>>>>>> c489dada736e8139d764adbca72baf4f2c5f2fd8
 .skills__android {
   width: 65%;
 }
@@ -598,9 +613,15 @@ img {
 }
 
 .skills__jdbc {
+<<<<<<< HEAD
   width: 50%;
   /* JDBC skill level */
   background-color: var(--first-color-alt);
+=======
+  width: 60%;
+  /* JDBC skill level */
+  background-color: var(--first-color-lighter);
+>>>>>>> c489dada736e8139d764adbca72baf4f2c5f2fd8
 }
 .skills__python {
   width: 40%;
